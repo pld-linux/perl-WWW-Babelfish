@@ -24,11 +24,11 @@ Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl WWW::Babelfish
 Summary(zh_CN):	WWW::Babelfish Perl Ä£¿é
 Name:		perl-WWW-Babelfish
 Version:	0.11
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-libwww
@@ -46,7 +46,8 @@ WWW::Babelfish - modu³ do t³umaczenia z wykorzystaniem babelfish.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 # tests are network-dependent and interactive
@@ -63,8 +64,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/WWW/Babelfish.pm
+%{perl_vendorlib}/WWW/Babelfish.pm
 # empty autosplit.ix
-#%dir %{perl_sitelib}/auto/WWW/Babelfish
-#%%{perl_sitelib}/auto/WWW/Babelfish/autosplit.ix
+#%dir %{perl_vendorlib}/auto/WWW/Babelfish
+#%%{perl_vendorlib}/auto/WWW/Babelfish/autosplit.ix
 %{_mandir}/man3/*
