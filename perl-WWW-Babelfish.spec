@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	WWW
 %define	pnam	Babelfish
-Summary:	WWW-Babelfish perl module
-Summary(pl):	Modu³ perla WWW-Babelfish
+Summary:	WWW::Babelfish perl module
+Summary(pl):	Modu³ perla WWW::Babelfish
 Name:		perl-WWW-Babelfish
 Version:	0.10
 Release:	4
@@ -18,10 +18,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-WWW-Babelfish - perl module for translation via babelfish.
+WWW::Babelfish - perl module for translation via babelfish.
 
 %description -l pl
-WWW-Babelfish - modu³ do t³umaczenia z wykorzystaniem babelfish.
+WWW::Babelfish - modu³ do t³umaczenia z wykorzystaniem babelfish.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
