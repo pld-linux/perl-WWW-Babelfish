@@ -2,15 +2,15 @@
 Summary:	WWW-Babelfish perl module
 Summary(pl):	Modu³ perla WWW-Babelfish
 Name:		perl-WWW-Babelfish
-Version:	0.09
-Release:	3
+Version:	0.10
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/WWW/WWW-Babelfish-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.6
+BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-libwww
 BuildRequires:	perl-IO-String
