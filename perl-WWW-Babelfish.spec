@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	WWW
 %define	pnam	Babelfish
-%include	/usr/lib/rpm/macros.perl
 Summary:	WWW-Babelfish perl module
 Summary(pl):	Modu³ perla WWW-Babelfish
 Name:		perl-WWW-Babelfish
 Version:	0.10
-Release:	3
-
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -25,7 +24,7 @@ WWW-Babelfish - perl module for translation via babelfish.
 WWW-Babelfish - modu³ do t³umaczenia z wykorzystaniem babelfish.
 
 %prep
-%setup -q -n WWW-Babelfish-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
