@@ -23,8 +23,8 @@ Summary(sv):	WWW::Babelfish Perlmodul
 Summary(uk):	Модуль для Perl WWW::Babelfish
 Summary(zh_CN):	WWW::Babelfish Perl дё©И
 Name:		perl-WWW-Babelfish
-Version:	0.10
-Release:	5
+Version:	0.11
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
