@@ -48,12 +48,12 @@ WWW::Babelfish - modu³ do t³umaczenia z wykorzystaniem babelfish.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 # tests are network-dependent and interactive
 %{?_with_tests:%{__make} test}
- 
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
