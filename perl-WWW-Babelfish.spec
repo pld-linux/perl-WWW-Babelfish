@@ -2,7 +2,7 @@
 Summary:	WWW-Babelfish perl module
 Summary(pl):	Modu³ perla WWW-Babelfish
 Name:		perl-WWW-Babelfish
-Version:	0.06
+Version:	0.07
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
