@@ -14,8 +14,6 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-libwww
 BuildRequires:	perl-IO-String
-%requires_eq	perl
-Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
