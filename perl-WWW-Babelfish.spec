@@ -66,5 +66,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_sitelib}/WWW/Babelfish.pm
 # empty autosplit.ix
 #%dir %{perl_sitelib}/auto/WWW/Babelfish
-#%{perl_sitelib}/auto/WWW/Babelfish/autosplit.ix
+#%%{perl_sitelib}/auto/WWW/Babelfish/autosplit.ix
 %{_mandir}/man3/*
