@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+# _with_tests - perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	WWW
@@ -48,7 +48,9 @@ WWW::Babelfish - modu³ do t³umaczenia z wykorzystaniem babelfish.
 %build
 perl Makefile.PL
 %{__make}
-%{!?_without_tests:%{__make} test}
+
+# tests are network-dependent and interactive
+%{?_with_tests:%{__make} test}
  
 %install
 rm -rf $RPM_BUILD_ROOT
