@@ -1,7 +1,7 @@
 #
 # Conditional build:
-# _with_tests - perform "make test"
-#
+%bcond_with	tests	# perform "make test"
+
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	WWW
 %define	pnam	Babelfish
@@ -23,17 +23,19 @@ Summary(sv):	WWW::Babelfish Perlmodul
 Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl WWW::Babelfish
 Summary(zh_CN):	WWW::Babelfish Perl Ä£¿é
 Name:		perl-WWW-Babelfish
-Version:	0.11
-Release:	2
-License:	GPL
+Version:	0.12
+Release:	1
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	99515fcf6f64090abc852ac39a267e71
+# Source0-md5:	6650c750a7148e57a14ead18ebfdca09
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6.1
+%if %{with tests}
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-libwww
 BuildRequires:	perl-IO-String
+%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -47,17 +49,18 @@ WWW::Babelfish - modu³ do t³umaczenia z wykorzystaniem babelfish.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL \
+%{__perl} Makefile.PL %{!?with_tests: </dev/null } \
 	INSTALLDIRS=vendor
 %{__make}
 
 # tests are network-dependent and interactive
-%{?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
