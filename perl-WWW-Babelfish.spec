@@ -1,7 +1,8 @@
 #
 # Conditional build:
 %bcond_with	tests	# perform "make test"
-
+			# tests are network-dependent and interactive
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	WWW
 %define	pnam	Babelfish
@@ -25,7 +26,8 @@ Summary(zh_CN):	WWW::Babelfish Perl Ä£¿é
 Name:		perl-WWW-Babelfish
 Version:	0.12
 Release:	1
-License:	GPL or Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	6650c750a7148e57a14ead18ebfdca09
@@ -53,7 +55,6 @@ WWW::Babelfish - modu³ do t³umaczenia z wykorzystaniem babelfish.
 	INSTALLDIRS=vendor
 %{__make}
 
-# tests are network-dependent and interactive
 %{?with_tests:%{__make} test}
 
 %install
