@@ -14,7 +14,7 @@ Summary(fr):	Module Perl WWW::Babelfish
 Summary(it):	Modulo di Perl WWW::Babelfish
 Summary(ja):	WWW::Babelfish Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	WWW::Babelfish ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul WWW::Babelfish
+Summary(nb):	Perlmodul WWW::Babelfish
 Summary(pl):	Modu³ Perla WWW::Babelfish
 Summary(pt):	Módulo de Perl WWW::Babelfish
 Summary(pt_BR):	Módulo Perl WWW::Babelfish
