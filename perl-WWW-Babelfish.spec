@@ -1,9 +1,12 @@
+%define	pdir	WWW
+%define	pnam	Babelfish
 %include	/usr/lib/rpm/macros.perl
 Summary:	WWW-Babelfish perl module
 Summary(pl):	Modu³ perla WWW-Babelfish
 Name:		perl-WWW-Babelfish
 Version:	0.10
-Release:	2
+Release:	3
+
 License:	GPL
 Group:		Development/Languages/Perl
 Group(cs):	Vývojové prostøedky/Programovací jazyky/Perl
@@ -14,7 +17,7 @@ Group(ja):	³«È¯/¸À¸ì/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Group(pt):	Desenvolvimento/Linguagens/Perl
 Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/WWW/WWW-Babelfish-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-HTML-Parser
