@@ -28,7 +28,7 @@ WWW-Babelfish - modu³ do t³umaczenia z wykorzystaniem babelfish.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
