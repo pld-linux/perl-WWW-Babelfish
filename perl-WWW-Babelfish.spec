@@ -46,7 +46,7 @@ WWW::Babelfish - modu³ do t³umaczenia z wykorzystaniem babelfish.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 # tests are network-dependent and interactive
