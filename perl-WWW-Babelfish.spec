@@ -4,8 +4,8 @@
 			# tests are network-dependent and interactive
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	WWW
-%define	pnam	Babelfish
+%define		pdir	WWW
+%define		pnam	Babelfish
 Summary:	WWW::Babelfish Perl module
 Summary(cs):	Modul WWW::Babelfish pro Perl
 Summary(da):	Perlmodul WWW::Babelfish
