@@ -7,22 +7,22 @@
 %define		pdir	WWW
 %define		pnam	Babelfish
 Summary:	WWW::Babelfish Perl module
-Summary(cs):	Modul WWW::Babelfish pro Perl
-Summary(da):	Perlmodul WWW::Babelfish
-Summary(de):	WWW::Babelfish Perl Modul
-Summary(es):	MÛdulo de Perl WWW::Babelfish
-Summary(fr):	Module Perl WWW::Babelfish
-Summary(it):	Modulo di Perl WWW::Babelfish
-Summary(ja):	WWW::Babelfish Perl •‚•∏•Â°º•Î
-Summary(ko):	WWW::Babelfish ∆ﬁ ∏¡Ÿ
-Summary(nb):	Perlmodul WWW::Babelfish
-Summary(pl):	Modu≥ Perla WWW::Babelfish
-Summary(pt):	MÛdulo de Perl WWW::Babelfish
-Summary(pt_BR):	MÛdulo Perl WWW::Babelfish
-Summary(ru):	Ìœƒ’Ãÿ ƒÃ— Perl WWW::Babelfish
-Summary(sv):	WWW::Babelfish Perlmodul
-Summary(uk):	Ìœƒ’Ãÿ ƒÃ— Perl WWW::Babelfish
-Summary(zh_CN):	WWW::Babelfish Perl ƒ£øÈ
+Summary(cs.UTF-8):   Modul WWW::Babelfish pro Perl
+Summary(da.UTF-8):   Perlmodul WWW::Babelfish
+Summary(de.UTF-8):   WWW::Babelfish Perl Modul
+Summary(es.UTF-8):   M√≥dulo de Perl WWW::Babelfish
+Summary(fr.UTF-8):   Module Perl WWW::Babelfish
+Summary(it.UTF-8):   Modulo di Perl WWW::Babelfish
+Summary(ja.UTF-8):   WWW::Babelfish Perl „É¢„Ç∏„É•„Éº„É´
+Summary(ko.UTF-8):   WWW::Babelfish ÌéÑ Î™®Ï§Ñ
+Summary(nb.UTF-8):   Perlmodul WWW::Babelfish
+Summary(pl.UTF-8):   Modu≈Ç Perla WWW::Babelfish
+Summary(pt.UTF-8):   M√≥dulo de Perl WWW::Babelfish
+Summary(pt_BR.UTF-8):   M√≥dulo Perl WWW::Babelfish
+Summary(ru.UTF-8):   –ú–æ–¥—É–ª—å –¥–ª—è Perl WWW::Babelfish
+Summary(sv.UTF-8):   WWW::Babelfish Perlmodul
+Summary(uk.UTF-8):   –ú–æ–¥—É–ª—å –¥–ª—è Perl WWW::Babelfish
+Summary(zh_CN.UTF-8):   WWW::Babelfish Perl Ê®°Âùó
 Name:		perl-WWW-Babelfish
 Version:	0.15
 Release:	1
@@ -44,8 +44,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 WWW::Babelfish - perl module for translation via babelfish.
 
-%description -l pl
-WWW::Babelfish - modu≥ do t≥umaczenia z wykorzystaniem babelfish.
+%description -l pl.UTF-8
+WWW::Babelfish - modu≈Ç do t≈Çumaczenia z wykorzystaniem babelfish.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
