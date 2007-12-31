@@ -24,13 +24,13 @@ Summary(sv.UTF-8):	WWW::Babelfish Perlmodul
 Summary(uk.UTF-8):	Модуль для Perl WWW::Babelfish
 Summary(zh_CN.UTF-8):	WWW::Babelfish Perl 模块
 Name:		perl-WWW-Babelfish
-Version:	0.15
+Version:	0.16
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	bc6293dabcbf5e96435fc8acaf8ac939
+# Source0-md5:	21f881470fd159c6732b4da866648452
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
