@@ -6,46 +6,33 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	WWW
 %define		pnam	Babelfish
-Summary:	WWW::Babelfish Perl module
-Summary(cs.UTF-8):	Modul WWW::Babelfish pro Perl
-Summary(da.UTF-8):	Perlmodul WWW::Babelfish
-Summary(de.UTF-8):	WWW::Babelfish Perl Modul
-Summary(es.UTF-8):	Módulo de Perl WWW::Babelfish
-Summary(fr.UTF-8):	Module Perl WWW::Babelfish
-Summary(it.UTF-8):	Modulo di Perl WWW::Babelfish
-Summary(ja.UTF-8):	WWW::Babelfish Perl モジュール
-Summary(ko.UTF-8):	WWW::Babelfish 펄 모줄
-Summary(nb.UTF-8):	Perlmodul WWW::Babelfish
-Summary(pl.UTF-8):	Moduł Perla WWW::Babelfish
-Summary(pt.UTF-8):	Módulo de Perl WWW::Babelfish
-Summary(pt_BR.UTF-8):	Módulo Perl WWW::Babelfish
-Summary(ru.UTF-8):	Модуль для Perl WWW::Babelfish
-Summary(sv.UTF-8):	WWW::Babelfish Perlmodul
-Summary(uk.UTF-8):	Модуль для Perl WWW::Babelfish
-Summary(zh_CN.UTF-8):	WWW::Babelfish Perl 模块
+Summary:	WWW::Babelfish - Perl extension for translation via Babelfish or Google
+Summary(pl.UTF-8):	WWW::Babelfish - rozszerzenie Perla do tłumaczenia z użyciem Babelfish lub Google
 Name:		perl-WWW-Babelfish
 Version:	0.16
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/WWW/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	21f881470fd159c6732b4da866648452
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/WWW-Babelfish/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-HTML-Parser
-BuildRequires:	perl-libwww
 BuildRequires:	perl-IO-String
+BuildRequires:	perl-libwww
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-WWW::Babelfish - perl module for translation via babelfish.
+WWW::Babelfish - Perl module for translation via Babelfish or Google.
 
 %description -l pl.UTF-8
-WWW::Babelfish - moduł do tłumaczenia z wykorzystaniem babelfish.
+WWW::Babelfish - moduł Perla do tłumaczenia z wykorzystaniem serwisu
+Babelfish lub Google.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
