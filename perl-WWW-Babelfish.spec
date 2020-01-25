@@ -3,7 +3,6 @@
 %bcond_with	tests	# perform "make test"
 			# tests are network-dependent and interactive
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	WWW
 %define		pnam	Babelfish
 Summary:	WWW::Babelfish - Perl extension for translation via Babelfish or Google
