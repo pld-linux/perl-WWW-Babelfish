@@ -9,7 +9,7 @@ Summary:	WWW::Babelfish - Perl extension for translation via Babelfish or Google
 Summary(pl.UTF-8):	WWW::Babelfish - rozszerzenie Perla do tłumaczenia z użyciem Babelfish lub Google
 Name:		perl-WWW-Babelfish
 Version:	0.16
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
